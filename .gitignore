@@ -1,0 +1,12 @@
+__pycache__/
+.DS_Store
+.ipynb_checkpoints/
+.venv/
+results/
+*.pt
+multi30k.model
+multi30k.vocab
+/multi30k/
+/english.json
+/russian.json
+/eval_*.txt
