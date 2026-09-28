@@ -43,6 +43,11 @@ Follow the notebook's submission instructions:
 
 Model checkpoints and downloaded datasets are not submission files.
 
+Section headings in the notebook give the point allocations. Autograder feedback
+covers result files; written answers are graded from `report.pdf`. Include all
+requested measurements and analysis even when the automated checks pass.
+Beam-search checks concern the optional extra-credit section.
+
 ### Create a submission ZIP
 
 In Colab, run the final **Create your submission ZIP** cell, select your report
