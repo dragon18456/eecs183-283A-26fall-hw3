@@ -3,6 +3,7 @@ __pycache__/
 .ipynb_checkpoints/
 .venv/
 results/
+/submission.zip
 *.pt
 multi30k.model
 multi30k.vocab
