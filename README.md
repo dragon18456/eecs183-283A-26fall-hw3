@@ -2,7 +2,8 @@
 
 **EECS 183 / 283A · Fall 2026 · 100 points + 10 bonus points**
 
-Complete the TODOs and starred (★) questions in [hw3.ipynb](hw3.ipynb).
+Complete the TODOs in [hw3.ipynb](hw3.ipynb) and answer the starred (★)
+questions in a separate report named **report.pdf**.
 The assignment covers language-model sampling, n-gram and LSTM models,
 sentiment classification, and sequence-to-sequence translation with attention.
 
@@ -29,8 +30,9 @@ automatically. Rerunning a training cell trains the model again.
 
 Follow the notebook's submission instructions:
 
-- Export the completed notebook, including answers to the starred questions,
-  as **HW3.pdf**.
+- Submit a separate **report.pdf** containing answers to all starred (★)
+  questions, requested results, and figures. Label each answer by section and
+  question. Do not submit a PDF export of the notebook.
 - Submit the generated **`.json` and `.npy` files inside `results/`** with their
   original filenames. Upload the result files directly so the autograder can
   find them at the submission root.
