@@ -33,6 +33,8 @@ Follow the notebook's submission instructions:
 - Submit a separate **report.pdf** containing answers to all starred (★)
   questions, requested results, and figures. Label each answer by section and
   question. Do not submit a PDF export of the notebook.
+- Include your completed **hw3.ipynb** for reference. It is not graded directly;
+  written answers are graded from **report.pdf**.
 - Submit the generated **`.json` and `.npy` files inside `results/`** with their
   original filenames. Upload the result files directly so the autograder can
   find them at the submission root.
@@ -40,6 +42,26 @@ Follow the notebook's submission instructions:
   the extra-credit section.
 
 Model checkpoints and downloaded datasets are not submission files.
+
+### Create a submission ZIP
+
+In Colab, run the final **Create your submission ZIP** cell, select your report
+PDF when prompted, and download `submission.zip`. The helper automatically
+includes the currently open notebook with your edits.
+
+Locally, save your completed `hw3.ipynb` and `report.pdf` beside the `results/`
+folder and run:
+
+```bash
+python make_submission.py
+```
+
+Use `--notebook`, `--report`, `--results`, or `--out` to specify different paths.
+The helper packages the notebook as `hw3.ipynb`, the report as `report.pdf`, and
+the `.json`/`.npy` files directly inside `results/`. Every file is placed at the
+ZIP root, with no enclosing `results/` folder. Upload `submission.zip` to
+Gradescope. The helper packages the files currently present; it does not check
+whether your answers are complete or correct.
 
 ## Run locally
 
@@ -58,5 +80,5 @@ After installing or changing packages in a running kernel, restart it before
 running the notebook.
 
 All data loading, batching, training, and evaluation code is in the notebook.
-The only Python support file is `colab_setup.py`, which installs pinned
-dependencies while keeping Colab's supplied PyTorch and CUDA.
+`colab_setup.py` installs pinned dependencies while keeping Colab's supplied
+PyTorch and CUDA. `make_submission.py` packages your notebook, report, and results.
